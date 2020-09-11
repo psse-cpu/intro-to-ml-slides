@@ -39,3 +39,82 @@ Intro to Machine Learning
 - example non-ML AI algorithms
   * A* pathfinding algo
   * minimax gameplaying algo
+
+
+
+#### Machine Learning
+
+<div>
+  <blockquote>
+    Field of study that gives computers the ability to learn without being explicitly programmed. <br>
+    <span style="font-size: 0.75em">
+      - <span style="color: brown; font-style: italics">Arthur Samuel (1959)</span>
+    </span>
+  </blockquote>
+  
+  ![arthur samuel](images/arthur-samuel.jpg)
+</div>
+
+
+
+#### Arthur Samuel's Checkers Playing Program
+
+![checkers](images/checkers.jpg)
+
+- started with minimax algorithm
+- also used $ \alpha-\beta $ pruning
+  * limited memory during his time
+- then allowed it to self learn
+
+
+
+### Formal Definition
+
+<div style="display: flex">
+  <blockquote>
+    A computer program is said to learn from experience E with respect to some task T
+    and some performance measure P, if its performance on T, as measured by P, 
+    <strong>improves with experience E.</strong>
+    <br>
+    <span style="font-size: 0.75em">
+      - <span style="color: brown; font-style: italics">Tom Mitchell (1998)</span>
+    </span>
+  </blockquote>
+  
+  ![arthur samuel](images/tom-mitchell.jpg)
+</div>
+
+
+
+#### ML is the best way towards human-like AI
+
+* Discuss on Canvas (or live class) the diff. between 
+  - artificial intelligence and 
+  - natural (human) intelligence
+* e.g. the inhumanity of AIs in your favorite MOBA:
+  - or other game genres?
+  - improves over time?
+    + doesn't fall for the same tricks again and again?
+    + bots don't buy defuse kits even after several losing streaks
+    + gets stuck in the small vent in CS:GO Mirage again and again
+    + 👆 takes too long to unstuck as a team
+  - very accurate chain-stuns?
+  - very accurate moving, jumping headshots?
+
+
+
+### Examples:
+
+* learning from web browsing data, clicks, etc.
+  - feel creepy about searches and ads being very smart?
+* smart embedded systems / IoT
+  - self-driving cars, self-piloting copters
+  - janitor/slave robots
+* five senses
+  - computer vision
+    * picture and face recognition
+    * handwriting recognition, OCR
+  - natural language processing
+    * Siri/Cortana can understand (-ish) what you say
+    * it can synthesize human-like speech to talk back to you
+
