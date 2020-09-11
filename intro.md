@@ -3,8 +3,8 @@ Intro to Machine Learning
 
 <small>
   <span style="color: darkblue;">&lt;</span><span style="color: goldenrod;">/&gt;</span>
-  <a href="https://github.com/psse-cpu/se3121-preparation-slides">
-    https://github.com/psse-cpu/se3121-preparation-slides
+  <a href="https://github.com/psse-cpu/se3121-intro-to-ml-slides">
+    https://github.com/psse-cpu/se3121-intro-to-ml-slides
   </a>
 </small>
 
