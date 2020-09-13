@@ -2,12 +2,20 @@ Two Broad Types of ML
 ---------------------
 
 
-### Breakdown 
+### Breakdown (1/2)
 
 * Two main types:
   - supervised learning and unsupervised learning
 
 ![breakdown](images/breakdown.png)
+
+
+
+#### Breakdown (2/2)
+
+* unsupervised learning - no labels
+
+![vs](images/supervised-vs-unsupervised.jpg)
 
 
 
