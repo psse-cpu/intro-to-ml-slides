@@ -100,6 +100,9 @@ Non-learning Algorithm: Minimax
 
 ### Depth-limited minimax algo
 
+* This function returns the score of the best move
+  - not the best _"move"_ itself, but you're almost there
+
 ```coffee [1-13 | 15-16]
 function minimax(node, depth, maximizingPlayer) is
   if depth == 0 or node is a terminal node then
@@ -121,4 +124,4 @@ minimax(origin, depth, TRUE)
 
 
 
-### Demo for tic-tac-toe is on lecture video
+### Demo for tic-tac-toe is on lecture videotxt
