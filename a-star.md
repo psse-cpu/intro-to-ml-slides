@@ -1,5 +1,5 @@
-A* Search Algorithm
--------------------
+Non-learning Algorithms:  A* Search
+-----------------------------------
 
 
 
@@ -18,7 +18,7 @@ A* Search Algorithm
 * Adjacent tiles replace graph child-nodes
   - since this batch are game experts, we'll practice A* on grids
 
-![](images/a-star.png)
+![A*](images/a-star.png)
 
 
 
@@ -27,7 +27,7 @@ A* Search Algorithm
 - it's an example of an informed search
 - DFS and BFS are blind searches
 
-![](images/sample-a-star.png)
+![A*](images/sample-a-star.png)
 
 
 
@@ -37,7 +37,7 @@ A* Search Algorithm
   + **g** measures travel distance to its adjacent node
   + **h** (heuristic function) estimates the distance to the goal
 
-![](images/sample-a-star.png)
+![A*](images/sample-a-star.png)
 
 
 
@@ -47,7 +47,7 @@ A* Search Algorithm
   + **g** in most cases, is not an estimate
   + **h** can simply be _"as-the-bird-flies"_ straight-line distance
 
-![](images/sample-a-star.png)
+![A*](images/sample-a-star.png)
 
 
 
@@ -57,7 +57,7 @@ A* Search Algorithm
   + **c** and **d** are both 18 units from **z**
   + but shorter travel from **a** to **c**
 
-![](images/sample-a-star.png)
+![A*](images/sample-a-star.png)
 
 
 
@@ -192,74 +192,85 @@ A* Search Algorithm
 
 ### Overview of A* on a graph
 
-![](images/a-star.gif)
+![A*](images/a-star.gif)
 
 * Cost of each node is `f = g + h`
 
 
 
-### A* Demo on Graph (1/6)
+### A* Demo on Graph (1/5)
 
-![](images/orig-graph.png)
+![A*](images/orig-graph.png)
 
 <pre>
-Q = [A(9)]
+Q = [S(7)]
 </pre>
 
 
 
-### A* Demo on Graph (2/6)
+### A* Demo on Graph (2/5)
 
-![](images/orig-graph.png)
+![A*](images/orig-graph.png)
 
-<pre>
-Q = [AB(5+4), AC(10+2)]
-Q = [AB(9),   AC(12)]
-</pre>
-
-
-
-### A* Demo on Graph (3/6)
-
-![](images/orig-graph.png)
-
-<pre>
-Q = [ABC(7+2), ABE(6+3), AC(12)]
-Q = [ABC(9),   ABE(9),   AC(12)]
-</pre>
+```
+Q = [SA(3+9), SD(2+5)]
+Q = [SA(12),  SD(7)]
+```
 
 
 
-### A* Demo on Graph (4/6)
+### A* Demo on Graph (2/5)
 
-![](images/orig-graph.png)
+![A*](images/orig-graph.png)
 
-<pre>
-Q = [ABE(9), ABCG(11+0), AC(12)]
-Q = [ABE(9), ABCG(11),   AC(12)]
-</pre>
-
-
-
-### A* Demo on Graph (5/6)
-
-![](images/orig-graph.png)
-
-<pre>
-Q = [ABEG(9+0), ABCG(11), AC(12)]
-Q = [ABEG(9),   ABCG(11), AC(12)]
-</pre>
+```
+Q = [SA(3+9), SDB(3+4), SDE(6+3)]
+Q = [SA(12),  SDB(7), SDE(9)]
+```
 
 
 
-### A* Demo on Graph (6/6)
+### A* Demo on Graph (3/5)
 
-![](images/orig-graph.png)
+![A*](images/orig-graph.png)
 
-<pre>
-Q = [ABEG(9),   ABCG(11), AC(12)]
-`Q.pop()` yields our goal, stop search
-</pre>
+```
+Q = [SA(3+9), SDE(6+3), SDBC(5+2), SDBE(4+3)]
+Q = [SA(12),  SDE(9),   SDBC(7), SDBE(7)]
+```
+
+
+
+### A* Demo on Graph (4/5)
+
+![A*](images/orig-graph.png)
+
+```
+Q = [SA(3+9), SDE(6+3), SDBE(4+3), SDBCG(9+0)]
+Q = [SA(12),  SDE(9),   SDBE(7),   SDBCG(9)]
+```
+
+
+
+### A* Demo on Graph (4/5)
+
+![A*](images/orig-graph.png)
+
+```
+Q = [SA(3+9), SDE(6+3), SDBCG(9+0), SDBEG(7+0)]
+Q = [SA(12),  SDE(9),   SDBCG(9),   SDBEG(7)]
+```
+
+
+
+### A* Demo on Graph (5/5)
+
+![A*](images/orig-graph.png)
+
+```
+Q = [SA(12),  SDE(9),   SDBCG(9)]
+popped == goal, path is S➡D➡B➡E➡G
+```
 
 
 
