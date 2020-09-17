@@ -124,4 +124,4 @@ minimax(origin, depth, TRUE)
 
 
 
-### Demo for tic-tac-toe is on lecture videotxt
+### Demo for tic-tac-toe is on lecture video
