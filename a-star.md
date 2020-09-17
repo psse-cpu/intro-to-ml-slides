@@ -198,7 +198,7 @@ Non-learning Algorithms:  A* Search
 
 
 
-### A* Demo on Graph (1/5)
+### A* Demo on Graph (1/7)
 
 ![A*](images/orig-graph.png)
 
@@ -208,7 +208,7 @@ Q = [S(7)]
 
 
 
-### A* Demo on Graph (2/5)
+### A* Demo on Graph (2/7)
 
 ![A*](images/orig-graph.png)
 
@@ -219,7 +219,7 @@ Q = [SA(12),  SD(7)]
 
 
 
-### A* Demo on Graph (2/5)
+### A* Demo on Graph (3/7)
 
 ![A*](images/orig-graph.png)
 
@@ -230,7 +230,7 @@ Q = [SA(12),  SDB(7), SDE(9)]
 
 
 
-### A* Demo on Graph (3/5)
+### A* Demo on Graph (4/7)
 
 ![A*](images/orig-graph.png)
 
@@ -241,7 +241,7 @@ Q = [SA(12),  SDE(9),   SDBC(7), SDBE(7)]
 
 
 
-### A* Demo on Graph (4/5)
+### A* Demo on Graph (5/7)
 
 ![A*](images/orig-graph.png)
 
@@ -252,7 +252,7 @@ Q = [SA(12),  SDE(9),   SDBE(7),   SDBCG(9)]
 
 
 
-### A* Demo on Graph (4/5)
+### A* Demo on Graph (6/7)
 
 ![A*](images/orig-graph.png)
 
@@ -263,7 +263,7 @@ Q = [SA(12),  SDE(9),   SDBCG(9),   SDBEG(7)]
 
 
 
-### A* Demo on Graph (5/5)
+### A* Demo on Graph (7/7)
 
 ![A*](images/orig-graph.png)
 
